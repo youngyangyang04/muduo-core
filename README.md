@@ -41,6 +41,11 @@ sudo apt-get install cmake
 git clone https://github.com/youngyangyang04/muduo-core.git
 ```
 
+进行到muduo-core文件
+```shell
+cd muduo-core
+```
+
 执行脚本构建项目，别忘记先增加
 
 ```shell
