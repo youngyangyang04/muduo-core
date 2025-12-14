@@ -186,10 +186,10 @@ void EventLoop::removeChannel(Channel *channel)
     poller_->removeChannel(channel);
 }
 
-bool EventLoop::hasChannel(Channel *channel)
-{
-    return poller_->hasChannel(channel);
-}
+// bool EventLoop::hasChannel(Channel *channel)
+// {
+//     return poller_->hasChannel(channel);
+// }
 
 void EventLoop::doPendingFunctors()
 {

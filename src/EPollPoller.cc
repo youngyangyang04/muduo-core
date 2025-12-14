@@ -129,7 +129,8 @@ void EPollPoller::update(int operation, Channel *channel)
     int fd = channel->fd();
 
     event.events = channel->events();
-    event.data.fd = fd;
+    //这里是联合体所以data.fd写了没有意义会被data.ptr覆盖
+    // event.data.fd = fd;
     event.data.ptr = channel;
 
     if (::epoll_ctl(epollfd_, operation, fd, &event) < 0)
